@@ -33,3 +33,10 @@ A probability function is a function from events to probabilities ($cal(B) -> bb
 1. (finite measure) $P(S) = 1$
 2. (positivity) $forall A in cal(B), P(A) >= 0$
 3. (countable additivity) For $A_1$, $A_2$, $A_3$, ..., the collection of pairwise disjoint subsets of $S$ in $cal(B)$, we must have $ P(union.big_(i in bb(N)) A_i) = sum_(i=1)^oo P(A_i) $
+
+== Independent events
+
+Two events $A$ and $B$ are independent if any of the following are true (all are equivalent):
+- $P(A sect B) = P(A)P(B)$
+- $P(A bar.v B) = P(A)$
+- $P(B bar.v A) = P(B)$
