@@ -1,6 +1,6 @@
 = STAT400 Notes
 
-== Terms
+== Basic Terms
 
 / Parameters: Quantitative features of a population
 / Statistics: Quantitative features calculated using a sample
@@ -40,3 +40,11 @@ Two events $A$ and $B$ are independent if any of the following are true (all are
 - $P(A sect B) = P(A)P(B)$
 - $P(A bar.v B) = P(A)$
 - $P(B bar.v A) = P(B)$
+
+== Random variables
+
+A random variable $X$ maps outcomes in some sample space to real numbers, i.e., $X : cal(S) -> bb(R)$. A random variable measures a specific quantitative feature of the sample space outcome.
+
+The *range* of $X$, the set of all possible values that $X$ can take, is denoted $cal(X)$.
+
+With the new sample space, $cal(X)$, you can use the order relationship in real numbers and you can add, multiply, etc.
