@@ -102,4 +102,6 @@ This is the continuous analog of the #link(<geometric-distribution>, [geometric 
 
 Also a special case of the gamma distribution: $chi_k^2 ~ "Gamma"(alpha = k/2, theta = 2)$.
 
-todo find out how to use it
+Stuff in real life isn't distributed this way. Chi-squared is mostly just used for hypothesis tests. It's closely related to the standard normal distribution ($Z$): $chi_1^2 = Z^2$. In general:
+
+$ chi_k^2 = (Z_1)^2 + (Z_2)^2 + ... + (Z_k)^2 $
