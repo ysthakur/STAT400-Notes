@@ -1,6 +1,12 @@
-= STAT400 Notes
+#set heading(numbering: "1.")
 
-== Basic Terms
+#align(center)[
+  #text(weight: "bold", size: 17pt)[STAT400 Notes]
+]
+
+#outline(title: "Table of contents", indent: auto)
+
+= Basic Terms
 
 / Parameters: Quantitative features of a population
 / Statistics: Quantitative features calculated using a sample
@@ -14,9 +20,9 @@ Inference and deduction goes in a circle. When developing a model, you estimate 
 / Event: Any subset $E$ of the sample space $S$ attached to an experiment will be called an event associated with the experiment. To say that an event E has happened means that the outcome of the experiment was in the set $E$.
 / Simple event: An event with only one event in it
 
-== Probability functions
+= Probability functions
 
-=== Sigma algebra
+== Sigma algebra
 
 A sigma algebra is a collection of interesting events in some sample space.
 
@@ -25,7 +31,7 @@ A collection $cal(B)$ of subsets of a sample space $S$ is a sigma algebra if:
 2. $forall A in cal(B), A^c in cal(B)$
 3. If ${A_i : i in bb(N)}$ is a countable collection such that $A_i in cal(B)$ for all $i$, then $union.big_(i in bb(N)) A_i in cal(B)$
 
-=== Probability functions
+== Probability functions
 
 Consider a sample space $S$ with a sigma algebra $cal(B)$.
 
@@ -34,14 +40,14 @@ A probability function is a function from events to probabilities ($cal(B) -> bb
 2. (positivity) $forall A in cal(B), P(A) >= 0$
 3. (countable additivity) For $A_1$, $A_2$, $A_3$, ..., the collection of pairwise disjoint subsets of $S$ in $cal(B)$, we must have $ P(union.big_(i in bb(N)) A_i) = sum_(i=1)^oo P(A_i) $
 
-== Independent events
+= Independent events
 
 Two events $A$ and $B$ are independent if any of the following are true (all are equivalent):
 - $P(A sect B) = P(A)P(B)$
 - $P(A bar.v B) = P(A)$
 - $P(B bar.v A) = P(B)$
 
-== Random variables
+= Random variables
 
 A random variable $X$ maps outcomes in some sample space to real numbers, i.e., $X : cal(S) -> bb(R)$. A random variable measures a specific quantitative feature of the sample space outcome.
 
