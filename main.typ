@@ -54,3 +54,52 @@ A random variable $X$ maps outcomes in some sample space to real numbers, i.e., 
 The *range* of $X$, the set of all possible values that $X$ can take, is denoted $cal(X)$.
 
 With the new sample space, $cal(X)$, you can use the order relationship in real numbers and you can add, multiply, etc.
+
+= Discrete distributions
+
+== Geometric distribution <geometric-distribution>
+
+
+
+= Continuous distributions
+
+== Normal distribution
+
+todo
+
+== Gamma distribution
+
+The gamma distribution is based on the gamma function, which extends the factorial function to complex numbers:
+
+$ Gamma(alpha) = integral_0^oo x^(alpha - 1) e^(-x) dif x $
+
+Some properties of $Gamma$:
+- $Gamma(x) = x!$ if $x$ is a non-negative integer
+- $Gamma(a + 1) = a Gamma(a)$
+
+If you have a gamma distribution $"Gamma"(alpha, lambda)$, then its probability density function is
+
+$ f_X(x) = cases(
+  (lambda^alpha x^(alpha-1) e^(-lambda x))/Gamma(alpha) "if" x > 0,
+  0 "otherwise"
+) $
+
+Note: there are two different parameterizations for $"Gamma"$:
+- $"Gamma"(alpha, beta"/"lambda)$ (with a rate parameter)
+- $"Gamma"(alpha, theta)$ (with a scale parameter)֫
+
+The $alpha$ is the shape parameter. $beta = 1/theta$
+
+== Exponential distribution
+
+This is a special case of the gamma distribution: $"Exponential"(lambda) = "Gamma"(1, lambda)$. If you sum $n$ independent $"Exponential"(lambda)$ random variables, you get a $"Gamma"(n, lambda)$ random variable.
+
+Application: Variables that model the amount of time you have to wait before something happens follow an exponential distribution. E.g., time between clicks of a Geiger counter.
+
+This is the continuous analog of the #link(<geometric-distribution>, [geometric distribution]). Only the geometric and exponential distributions are *memoryless*.
+
+== Chi-squared distribution
+
+Also a special case of the gamma distribution: $chi_k^2 ~ "Gamma"(alpha = k/2, theta = 2)$.
+
+todo find out how to use it
