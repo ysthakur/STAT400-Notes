@@ -105,3 +105,46 @@ Also a special case of the gamma distribution: $chi_k^2 ~ "Gamma"(alpha = k/2, t
 Stuff in real life isn't distributed this way. Chi-squared is mostly just used for hypothesis tests. It's closely related to the standard normal distribution ($Z$): $chi_1^2 = Z^2$. In general:
 
 $ chi_k^2 = (Z_1)^2 + (Z_2)^2 + ... + (Z_k)^2 $
+
+= Relationships between variables
+
+/ Large value: A value of some random variable is large if it's greater than the mean
+/ Small value: A value of some random variable is small if it's less than the mean
+
+/ Positive relationship: $X$ and $Y$ have a positive relationship if large values of $X$ are associated with large values of $Y$ and small values of $X$ are associated with small values of $Y$
+/ Negative relationship: $X$ and $Y$ have a negative relationship if large values of $X$ are associated with small values of $Y$ and small values of $X$ are associated with large values of $Y$
+
+== Covariance
+
+$ "Cov"(X, Y) = E((X - mu_X)(Y - mu_Y)) $
+
+When $X$ and $Y$ have a positive relationship, the covariance should be positive. When they have a negative relationship, the covariance should be negative.
+
+Units of $"Cov"(X, Y)$ are $("units of" X) dot ("units of" Y)$. This is a problem, since the magnitude of the covariance depends on the units.
+
+Properties:
+- $"Cov"(X, X) = V(X)$
+- $"Cov"(X, Y) = "Cov"(Y, X)$
+- $"Cov"(a X + b Y, Z) = a"Cov"(X, Z) + b"Cov"(Y, Z)$
+
+== Correlation coefficient
+
+$ "Corr"(X, Y) = rho_(X, Y) = "Cov"(X, Y)/(sqrt(V(X))sqrt(V(Y))) $
+
+This one is unitless, unlike covariance. It always lies in $[-1, 1]$.
+
+$rho_(X, Y) = plus.minus 1$ iff there is a perfect linear relationship between $X$ and $Y$.
+
+The correlation coefficient measures the extent of the linear relationship between $X$ and $Y$.
+
+= Linear combinations of random variables
+
+If you have $Y = a_1 X_1 + a_2 X_2 + ... + a_n X_n$, then $E(Y) = a_1 E(X_1) + ... + a_n E(X_n)$
+
+Variance is more complicated:
+
+$ V(Y) = "Cov"(Y, Y) = sum_(i=1)^n a_i^2 V(X_i) + 2 sum_(1<=i<=j<=n) a_i a_j "Cov"(X_i, X_j) $
+
+If all the random variables $X_i$ are independent, then the covariance terms cancel out, meaning that:
+
+$ V(Y) = sum_(i=1)^n a_i^2 V(X_i) $
