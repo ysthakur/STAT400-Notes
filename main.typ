@@ -148,3 +148,23 @@ $ V(Y) = "Cov"(Y, Y) = sum_(i=1)^n a_i^2 V(X_i) + 2 sum_(1<=i<=j<=n) a_i a_j "Co
 If all the random variables $X_i$ are independent, then the covariance terms cancel out, meaning that:
 
 $ V(Y) = sum_(i=1)^n a_i^2 V(X_i) $
+
+= Random samples and statistics
+
+/ Random sample: We say the collection of random variables ${X_1, X_2, ..., X_n}$ is a *random sample* of size $n$ from the population distribution $X$ if:
+- The $X_i$s are identically distributed to the distribution of $X$, i.e., $X_i ~ X$
+- The $X_i$s are mutually independent, i.e., joint pdf/pmf splits into its marginals
+
+/ Statistic: A quantity calculated using a random sample.
+
+/ Joint sample space: Suppose ${X_1, ..., X_n}$ is a random sample from population $X$ and $X$ takes values in $cal(X)$. The joint sample space for the random sample is $cal(X)^n = {(x_i, ..., x_n) | x_i in cal(X)}$.
+
+The joint sample space is the set of all possible sample data for the random sample.
+
+If $T$ is a statistic calculated using the random sample ${X_1, ..., X_n}$ with joint sample space $cal(X)^n$, then we can think of $T$ as the function
+
+$ T : cal(X)^n -> bb(R) $
+
+Therefore, $T$ is a random variable.
+
+/ Sampling distribution: The associated probability distribution of $T$ above is called the sampling distribution of the statistic $T$.
