@@ -172,3 +172,7 @@ Therefore, $T$ is a random variable.
 == Central Limit Theorem
 
 If you have a random sample of size $n$ from a distribution $X$ with $E(X) = mu$ and $V(X) = sigma^2$, then, if $n$ is large enough, the sample mean $overline(X)$ will approximately have the distribution $N(mu, sigma^2/n)$
+
+= Estimators
+
+== Parametric estimation
