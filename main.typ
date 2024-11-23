@@ -180,3 +180,9 @@ If you have a random sample of size $n$ from a distribution $X$ with $E(X) = mu$
 Supposeo the actual distribution has parameters $theta_1, theta_2, ..., theta_k$.
 
 We want to estimate these parameters. The estimates are $hat(theta_1), hat(theta_2), ..., hat(theta_k)$
+
+=== Point estimators
+
+Suppose a population is fixed and has distribution $X$ with parameters $theta_1, theta_2, ..., theta_k$
+
+/ Point estimator: A point estimator for the parameter $theta_i$ is a statistic $hat(theta_i)$ calculated using a random sample of size $n$ coming from the population distribution whose values are used as estimates for $theta_i$
