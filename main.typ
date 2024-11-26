@@ -186,3 +186,14 @@ We want to estimate these parameters. The estimates are $hat(theta_1), hat(theta
 Suppose a population is fixed and has distribution $X$ with parameters $theta_1, theta_2, ..., theta_k$
 
 / Point estimator: A point estimator for the parameter $theta_i$ is a statistic $hat(theta_i)$ calculated using a random sample of size $n$ coming from the population distribution whose values are used as estimates for $theta_i$
+
+/ Bias: The bias of a point estimator is the expected deviation of values from $hat(theta)$ from $theta$
+
+$ "Bias"(hat(theta)) = E(hat(theta)) - theta = E(hat(theta) - theta) $
+
+/ Unbiased: A point estimator $hat(theta)$ is unbiased if $"Bias"(hat(theta)) = 0$ for all $theta$
+/ Consistent: A point estimator $hat(theta)$ is consistent if $lim_(n->oo) "MSE"(hat(theta)) = 0$
+
+*Very important theorem:*
+
+$ "MSE"(hat(theta)) = V(hat(theta)) + "Bias"(hat(theta))^2 $
