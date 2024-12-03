@@ -197,3 +197,22 @@ $ "Bias"(hat(theta)) = E(hat(theta)) - theta = E(hat(theta) - theta) $
 *Very important theorem:*
 
 $ "MSE"(hat(theta)) = V(hat(theta)) + "Bias"(hat(theta))^2 $
+
+== Method of Moments
+
+Given: $k$ parameters attached to a population distribution.
+
+Goal: given a random sample of size $n$, find $k$ estimators for these parameters.
+
+Intuition: the estimators will show up as solutions to a system of $k$ equations.
+
+/ Population moment: The $k$th population moment is defined as $mu_k := E(X^k)$
+/ Sample moment: Given a random sample ${X_1, X_2, ..., X_n}$ coming from the population distribution $X$, the $k$th sample moment is defined as $1/n sum_(i=1)^n X_i^k$
+
+Intuition: For large enough $n$, the $k$th sample moments estimate the $k$th population moments.
+
+MoM Algorithm:
+
+1. Calculate the first $k$ population moments
+2. Derive a system of $k$ equations by equating each $i$th population moment to the $i$th sample moment.
+3. Find solutions to the system, if they exist. These are the MoM estimators. 
