@@ -200,9 +200,7 @@ $ "MSE"(hat(theta)) = V(hat(theta)) + "Bias"(hat(theta))^2 $
 
 == Method of Moments
 
-Given: $k$ parameters attached to a population distribution.
-
-Goal: given a random sample of size $n$, find $k$ estimators for these parameters.
+Goal: Given $k$ parameters attached to a population distribution. and a random sample of size $n$, find $k$ estimators for these parameters.
 
 Intuition: the estimators will show up as solutions to a system of $k$ equations.
 
@@ -216,3 +214,29 @@ MoM Algorithm:
 1. Calculate the first $k$ population moments
 2. Derive a system of $k$ equations by equating each $i$th population moment to the $i$th sample moment.
 3. Find solutions to the system, if they exist. These are the MoM estimators. 
+
+== Maximum Likelihood Estimators (MLEs)
+
+Goal is same as Method of Moments estimators: given $k$ parameters attached to a population distribution. and a random sample of size $n$, find $k$ estimators for these parameters.
+
+Intuition: set up an optimization problem, and the solutions to this problem, if they exist, are the MLEs.
+
+Suppose the population has distribution $X$ with pmf given by $f(x; theta_1, theta_2, ..., theta_k)$
+
+Suppose ${X_1, X_2, ..., X_n}$ is sample data coming from $X$
+
+*Likelihood function* (you want to maximize this):
+
+$ L : Theta -> bb(R) $
+
+$ L(theta_1, ..., theta_k; X_1, ..., X_n) := product_(i=1)^n f(X_i; theta_1, ..., theta_k) $
+
+($Theta subset.eq bb(R)^k$ is the parameter space)
+
+*Log likelihood function*: $l(theta_1, ..., theta_k; X_1, ..., X_n) = ln(L(theta_1, ..., theta_k; X_1, ..., X_n))$
+
+The arguments that maximize the log likelihood function also maximize the likelihood function, so you can try to find the maximize the log likelihood function instead of the likelihood function. This is helpful because maximizing the log likelihood function is easier.
+
+*Principal of maximum likelihood estimation*: If $hat(theta)_1, ..., hat(theta)_k$ satisfy $L(hat(theta)_1, ..., hat(theta)_k; X_1, ..., X_n) >= L(theta_1, ..., theta_k; X_1, ..., X_n)$ for all $(theta_1, ..., theta_k) in bb(R)^k$, then $hat(theta)_1, ..., hat(theta)_k$ are called the *maximum likelihood estimators* for $theta_1, ..., theta_k$.
+
+To calculate MLE, apply second derivative test to likelihood function.
