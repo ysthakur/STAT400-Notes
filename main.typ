@@ -213,7 +213,9 @@ MoM Algorithm:
 
 1. Calculate the first $k$ population moments
 2. Derive a system of $k$ equations by equating each $i$th population moment to the $i$th sample moment.
-3. Find solutions to the system, if they exist. These are the MoM estimators. 
+3. Find solutions to the system, if they exist. These are the MoM estimators.
+
+Method of Moments estimators can be biased.
 
 == Maximum Likelihood Estimators (MLEs)
 
@@ -240,3 +242,5 @@ The arguments that maximize the log likelihood function also maximize the likeli
 *Principal of maximum likelihood estimation*: If $hat(theta)_1, ..., hat(theta)_k$ satisfy $L(hat(theta)_1, ..., hat(theta)_k; X_1, ..., X_n) >= L(theta_1, ..., theta_k; X_1, ..., X_n)$ for all $(theta_1, ..., theta_k) in bb(R)^k$, then $hat(theta)_1, ..., hat(theta)_k$ are called the *maximum likelihood estimators* for $theta_1, ..., theta_k$.
 
 To calculate MLE, apply second derivative test to likelihood function.
+
+Maximum Likelihood Estimators can be biased, but asymptotically unbiased (as $n -> oo$, bias goes to 0).
