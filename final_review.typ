@@ -17,7 +17,13 @@ $ P(|X-15| > 3) &= 1 - P(|X - 15| <= 3)\
 
 = 4. todo
 
-= 5. todo
+= 5.
+
+DO THIS WHEN YOU GET HOME
+
+== 5.a. todo
+
+== 5.b. todo
 
 = 6. todo
 
@@ -31,7 +37,35 @@ $ E(X Y) =  $
 
 == 8.b. todo
 
-= 9...12 todos
+= 9. todo
+
+This one was in the homework so you can check
+
+== 9.a. (done, not checked)
+
+$ P(X = 4, Y = 2) &= P(Y = 2 | X = 4)P(X = 4)\
+&= p_"Binom" (2; p = 0.7, n = 4) dot 0.2\
+&= mat(4; 2) 0.7^2 dot 0.3^2 dot 0.2\
+&= 0.05292 $
+
+== 9.b. todo
+
+$ P(X = Y) &= sum_(x=0)^4 mat(4; x) 0.7^x dot 0.3^(4-x) dot P(X = x) $
+
+Expand manually I guess?
+
+== 9.c. todo
+
+Joint pmf is a table of $P(X = x, Y = y)$
+
+Marginal pmf of $Y$ is just $P(Y = y)$
+
+= 10...11 todos
+
+= 12. todo
+
+$ P(X = 6 | Z = 20) &= P(X = 6 sect Z = 20)/P(Z = 20)\
+&= P(X = 6 sect Y = 14)/P(X + Y = 20) $
 
 = 13. todo
 
@@ -92,7 +126,7 @@ This is the hypergeometric distribution with $N = 8$, $M = 5$, and $n = 3$
 
 = 16. todo
 
-= 17. todo
+= 17.
 
 == 17.a. (done, not checked)
 
@@ -148,7 +182,27 @@ $ V(hat(theta)_i) &= E(hat(theta)_i^2) - E(hat(theta)_i)^2\
 
 todo i have no idea how to solve this
 
-= 27...32 todos
+= 27. todo
+
+= 28. (done, not checked)
+
+$E(X) = 10$, $V(X) = 20$
+
+We know that $overline(X) ~ "Normal"(mu = 10, sigma^2 = 20/49)$ thanks to the Central Limit Theorem.
+
+In terms of the standard normal distribution, this is $overline(X) = 20/49 Z + 10$
+
+So $(overline(X) - 10) dot 49/20 = Z$
+
+$ P(|overline(X) - 8| > 3) &= 1 - P(|overline(X) - 8| <= 3)\
+&= 1 - P(-3 <= overline(X) - 8 <= 3)\
+&= 1 - P(5 <= overline(X) <= 11)\
+&= 1 - (P(overline(X) <= 11) - P(overline(X) < 5))\
+&= 1 - P(overline(X) <= 11) + P(overline(X) < 5)\
+&= 1 - Phi((11 - 10) dot 49/20) + Phi((5 - 10) dot 49/20)\
+&= 1 - Phi(49/20) + Phi((-49)/4)\ $
+
+= 29...32 todos
 
 = 33. todo
 
