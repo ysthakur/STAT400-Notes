@@ -2,6 +2,16 @@
   #text(weight: "bold", size: 17pt)[STAT400 Final Exam Review]
 ]
 
+TODO get familiar with the different distributions
+
+Which distributions can be used to approximate which distributions?
+- Poisson can approximate binomial
+- Binom can approximate hypergeometric
+
+
+TODO why is this true?
+If $X ~ "Pois"(lambda = 7)$, then $P(-10 <= X <= 1) = e^(-7) + 7e^(-7)$
+
 = 1.
 
 $ P(|X-15| > 3) &= 1 - P(|X - 15| <= 3)\
@@ -29,7 +39,11 @@ DO THIS WHEN YOU GET HOME
 
 = 7. todo
 
+= 7.c. todo
+
 = 8. todo
+
+TODO FIGURE THIS ONE OUT!!!
 
 == 8.a. todo
 
@@ -188,21 +202,27 @@ todo i have no idea how to solve this
 
 $E(X) = 10$, $V(X) = 20$
 
-We know that $overline(X) ~ "Normal"(mu = 10, sigma^2 = 20/49)$ thanks to the Central Limit Theorem.
+We know that $overline(X) ~ "Normal"(mu = 10, sigma^2 = sqrt(20)/7)$ thanks to the Central Limit Theorem.
 
-In terms of the standard normal distribution, this is $overline(X) = 20/49 Z + 10$
+In terms of the standard normal distribution, this is $overline(X) = sqrt(20)/7 Z + 10$
 
-So $(overline(X) - 10) dot 49/20 = Z$
+So $(overline(X) - 10) dot 49/sqrt(20) = Z$
 
 $ P(|overline(X) - 8| > 3) &= 1 - P(|overline(X) - 8| <= 3)\
 &= 1 - P(-3 <= overline(X) - 8 <= 3)\
 &= 1 - P(5 <= overline(X) <= 11)\
 &= 1 - (P(overline(X) <= 11) - P(overline(X) < 5))\
 &= 1 - P(overline(X) <= 11) + P(overline(X) < 5)\
-&= 1 - Phi((11 - 10) dot 49/20) + Phi((5 - 10) dot 49/20)\
-&= 1 - Phi(49/20) + Phi((-49)/4)\ $
+&= 1 - Phi((11 - 10) dot 7/sqrt(20)) + Phi((5 - 10) dot 7/sqrt(20))\
+&= 1 - Phi(7/sqrt(20)) + Phi((-35)/sqrt(20)) $
 
-= 29...32 todos
+= 29...30 todos
+
+= 31. (simple but too much effort, not worth solving)
+
+= 32. (done on paper, not checked)
+
+Bias: $sigma^2/n$
 
 = 33. todo
 
@@ -255,7 +275,19 @@ Maximum likelihood: Same
 
 Since $x=3$ isn't included in the probability distribution table, our assumed distribution is probably not very good.
 
-= 34...41 todos
+= 34. (done on paper, checked)
+
+= 35. (done on paper, checked)
+
+= 36...37 todos
+
+These are just MoM and MLE
+
+= 38. (done on paper, checked)
+
+= 39...41 todos
+
+These are all just MoM and MLEs
 
 = 42.
 
